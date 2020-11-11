@@ -1,0 +1,3 @@
+<?php
+	$timestamp = date('dmY');
+?>

@@ -1,0 +1,101 @@
+/*
+  HIDESHARE CSS
+*/
+.hideshare-wrap {
+  text-align: center;
+  display: inline;
+  position: relative;
+}
+.hideshare-wrap .hideshare-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+a.hideshare-facebook {
+	color: #3b5998;
+}
+
+a.hideshare-twitter{
+	color: #1B95DE;
+}
+
+a.hideshare-hyperlink{
+	color: #939393;
+}
+
+a.hideshare-telegram{
+	color: #20a0e1;
+}
+
+a.hideshare-whatsapp{
+	color: #4dc75a;
+}
+
+a.hideshare-google-plus, a.hideshare-pinterest{
+	color: #db4437;
+}
+
+a.hideshare-instagram{
+	color: #6a453b;
+}
+
+.hideshare-wrap li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin: 10px 5px 0;
+}
+.hideshare-wrap span {
+  display: none;
+}
+
+.share {
+ // display: block;
+ // width: 200px;
+ // margin: 0 auto;
+ // background: #dedede;
+ // color: #232323;
+ // -webkit-border-radius: 5px;
+ // -moz-border-radius: 5px;
+ // -ms-border-radius: 5px;
+ // -o-border-radius: 5px;
+ // border-radius: 5px;
+ // padding: 1em 0;
+ // border: 1px solid #444;
+ // text-align: center;
+ // font-weight: 700;
+ // text-transform: uppercase;
+ // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+	margin-left:10px;
+}
+
+ .share:hover {
+ // background: #ffffff;
+}
+
+.hideshare-list {
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  top:-60px !important;
+  border-radius: 5px;
+  height: 60px;
+  border: solid 1px gray;
+  z-index:1000;
+  margin-left: -30px !important;
+}
+
+.hideshare-list a {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.hideshare-list a:hover {
+  //color: #ffffff;
+}
