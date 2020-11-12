@@ -74,7 +74,14 @@ a.hideshare-instagram{
  // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
 	margin-left:10px;
 }
+.like{
+  margin-left:10px;
 
+}
+.like i{
+  font-size: 35px;
+  color:red!important
+}
  .share:hover {
  // background: #ffffff;
 }

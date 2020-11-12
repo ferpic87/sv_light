@@ -190,8 +190,8 @@ h1 {
   margin-right: 3px;
 }
 
-#inspiration {
-  background-image: url("../img/cat2.png");
+ /*#inspiration {
+ background-image: url("../img/cat2.png");
   width: 300px;
   height: 500px;
   background-repeat: no-repeat;
@@ -205,11 +205,11 @@ h1 {
   font-size: 15px;
   cursor: pointer;
   //text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
+}*/
 
-#inspiration span {
+/*#inspiration span {
   animation: type 4s steps(60, end);
-}
+}*/
 
 @keyframes type {
   from {
@@ -379,5 +379,10 @@ hr{
 }
 body{
   font-family: 'Montserrat';
+}
+.logo_bottom{
+  text-align: center;
+  opacity: 0.3;
+  margin-top: 100px;
 }
 /*END MODIFICHE GRAFICHE MARIO*/

@@ -106,6 +106,9 @@ require_once __DIR__ ."/head.php";
 					<div class="row">
 						<div class="col s12 m12 l12"><h5 style="display:none" class="result-message">Risultati per gli ingredienti <span id="label-ingredients"></span></h5></div>
 					</div>
+					<div id="inspiration" style="display:none"  class="logo_bottom">
+						<img style="width:60%" alt="Logo Svuotafrigo" src="img/logo_640.png">
+					</div>
 					<!--<div id="inspiration" style="display:none" class="noselect">
 						<span style="display:none">Ciao sono Freddyno, il tuo assistente virtuale. Lo sapevi che con Svuotafrigo puoi fare ricerche complesse come <a href="<?php echo $ricerca_complessa[0]['query'] ?>&suggerimento=true" style='color:#26a69a'>< ?php echo $ricerca_complessa[0]['descrizione'] ?></a>? Basta usare i filtri avanzati in alto. Oppure puoi farti consigliare ingredienti stagionali usando il menu a sinistra, premendo su <a href="#" onclick='inspire_me()' style='color:#26a69a'> Ispirami</a>.</span>
 					</div-->
@@ -184,7 +187,9 @@ require_once __DIR__ ."/head.php";
 			$("#splashscreen").hide();
 	  }
 		if(window.location.href.indexOf('ingredients=') == -1 && window.location.href.indexOf('name=') == -1) 
-			setTimeout(showInspiration, 3000);
+			//setTimeout(showInspiration, 3000);		
+				showInspiration()
+
 
 	  function showInspiration() {
 			$("#inspiration").fadeIn(2000, function() {

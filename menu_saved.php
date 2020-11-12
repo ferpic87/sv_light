@@ -62,8 +62,10 @@ function print_menu($location) {
 		<ul class="sidebar-nav">
 			<li class="sidebar-brand">
 			<a href="./'.$origin.'.php">
-				<img style="margin-top: 15px; width:80%" alt="Logo Svuotafrigo" src="img/fridge_svuota.png">
+				<img style="margin-top: 15px; width:30%" alt="Logo Svuotafrigo" src="img/logo_640.png">
 			</a>
+			<span id="app-name_menu"><b>Svuota</b>frigo</span>
+
 			</li>
 			<div id="firstBlockMenu">
 			<li>'.$link_index.'</li>

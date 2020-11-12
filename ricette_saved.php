@@ -25,7 +25,7 @@ require_once __DIR__ .'/head.php';
 				<div class="leftoverlay"></div>
 
 				<div class="row">
-					<p class="testata" onclick="document.location = '<?php echo $origin ?>.php'"><span id="menu-icon-id"><i class="material-icons">dehaze</i></span><span id="app-name">Svuotafrigo</span></p>
+					<p class="testata" onclick="document.location = '<?php echo $origin ?>.php'"><span id="menu-icon-id"><i class="material-icons">dehaze</i></span><span id="app-name"><b>Svuota</b>frigo</span></span></p>
 				</div>
 				<!-- Sidebar -->
 				<?php print_menu('ricette_salvate'); ?>

@@ -904,7 +904,7 @@ function saveRecipe(obj, nome, url, urlImmagine, source, ingredienti) {
 
 function getStringFavorite(url) {
 	if(isSaved(url))
-		return "style=\"color:red\">favorite";
+		return "style=\"color:red!important\">favorite";
 	else
 		return ">favorite_border";
 }
@@ -942,12 +942,12 @@ function constructHtmlRecipe(url,urlImage,name,source,ingredientsHtml,ingredient
 					'<p class="card-text ingredient-list">'+
 					//'<p>Ingredienti</p>:&nbsp;'+
 					ingredientsHtml+'</p>'+
-					'<div class="buttonShare"><a href="'+url+'?ref=svuotafrigo" class="btn btn-floating" onclick="interceptRedirect(\''+url+'\','+page+',\''+source+'\',\''+name+'\')"><i class="material-icons">open_in_new</i></a>'+
+					'<div class="buttonShare"><a href="'+url+'?ref=svuotafrigo" class="btn btn-floating" onclick="interceptRedirect(\''+url+'\','+page+',\''+source+'\',\''+name+'\')"><img style="vertical-align:unset" alt="link" src="img/link.png"></a>'+
 					'<a class="share btn btn-floating" href="#" url="http://www.apphost.it/ricette/ricetta.php?id='+url+'" urlImage="'+urlImage+'">'+
-						'<i class="material-icons">share</i>'+
+						'<img style="vertical-align:unset" alt="share" src="img/share.png">'+
 					'</a>'+
-					'<a href="#" url="'+url+'" onclick="return saveRecipe(this,\''+escape(name)+'\',\''+url+'\',\''+urlImage+'\',\''+source+'\',\''+escape(ingredientsText)+'\')">'+
-						'<i class="material-icons favourite" '+getStringFavorite(url)+'</i>'+
+					'<a class="like btn btn-floating" href="#" url="'+url+'" onclick="return saveRecipe(this,\''+escape(name)+'\',\''+url+'\',\''+urlImage+'\',\''+source+'\',\''+escape(ingredientsText)+'\')">'+
+						'<i class="material-icons" '+getStringFavorite(url)+'</i>'+
 					'</a>'+
 
 					'<!-- a href="#" url="#" onclick="likeRecipe(\''+url+'\')">'+

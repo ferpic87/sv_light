@@ -95,7 +95,7 @@ Scrivi ciò che hai in dispensa e Svuotafrigo ti suggerirà il piatto giusto per
 					<div class="leftoverlay" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
 
 					<div class="row">
-						<p class="testata"><span id="menu-icon-id"><i class="material-icons">dehaze</i></span><span id="app-name">Svuotafrigo</span></p>
+						<p class="testata"><span id="menu-icon-id"><i class="material-icons">dehaze</i></span><span id="app-name"><b>Svuota</b>frigo</span></span></p>
 					</div>
 					<!-- Sidebar -->
 					<div id="sidebar-wrapper">
