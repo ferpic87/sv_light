@@ -19,6 +19,7 @@
 <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css?v=<?php echo $timestamp; ?>" media="screen">
 <link rel="stylesheet" type="text/css" href="css/hideshare.css?v=<?php echo $timestamp; ?>" media="screen">
 <link rel="stylesheet" type="text/css" href="css/toast-notification-popup.css?v=<?php echo $timestamp; ?>" media="print" onload="this.media='all'">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
 
 <script
 	src="js/jquery.min.js"></script>

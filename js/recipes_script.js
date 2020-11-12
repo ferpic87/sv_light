@@ -431,12 +431,12 @@ function constructHtmlRecipe(url,urlImage,name,source,ingredientsHtml,ingredient
 				//'</div>'+
 				'<div class="card-block">'+
 					'<div class="my-card-title" itemprop="name">'+name+'</div>'+
-					'<div class="my-card-subtitle" itemprop="name"> by '+mapSource(source)+'</div>'+
+					'<div class="my-card-subtitle" itemprop="name"> &copy; '+mapSource(source)+'</div>'+
 					'<hr style="margin-top: 0.5rem; margin-bottom: 0.5rem;">'+
 					'<p class="card-text ingredient-list">'+
 					//'<p>Ingredienti</p>:&nbsp;'+
 					ingredientsHtml+'</p>'+
-					'<div class=""><a href="'+url+'?ref=svuotafrigo" class="btn btn-floating" onclick="interceptRedirect(\''+url+'\','+page+',\''+source+'\',\''+name+'\')"><i class="material-icons">open_in_new</i></a>'+
+					'<div class="buttonShare"><a href="'+url+'?ref=svuotafrigo" class="btn btn-floating" onclick="interceptRedirect(\''+url+'\','+page+',\''+source+'\',\''+name+'\')"><i class="material-icons">open_in_new</i></a>'+
 					'<a class="share btn btn-floating" href="#" url="http://www.apphost.it/ricette/ricetta.php?id='+url+'" urlImage="'+urlImage+'">'+
 						'<i class="material-icons">share</i>'+
 					'</a>'+

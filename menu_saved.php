@@ -65,20 +65,27 @@ function print_menu($location) {
 				<img style="margin-top: 15px; width:80%" alt="Logo Svuotafrigo" src="img/fridge_svuota.png">
 			</a>
 			</li>
+			<div id="firstBlockMenu">
 			<li>'.$link_index.'</li>
-			<li>'.$link_ricetta_del_giorno.'</li>
-			<li>
-				<a href="#" onclick="">Ispirami</a>
-			</li>
 			<li>
 				'.$link_menu_ricette_salvate.'
 			</li>
 			<li>
+				'.$link_cronologia.'
+			</li>
+			</div>
+			<hr style="width:80%">
+
+			<div id="secondBlockMenu">
+			<li>
+				<a href="#" onclick="">Ispirami</a>
+			</li>
+			<li>'.$link_ricetta_del_giorno.'</li>
+			<li>
 				'.$link_menu_secondario.'
 			</li>
-			<li>
-				'.$link_cronologia.'
-			</li>'.
+			</div>
+			'.
 			/*<li>
 				'.$link_vegetariane.'
 			</li>
@@ -101,7 +108,8 @@ function print_menu($location) {
 					Dispensa <img src="img/pro.png">
 				</a>
 			</li>':'').
-			'<li>
+			'<div id="bottomBlockMenu">
+			<li>
 				<a href="#infoModal" class="modal-trigger" onclick="toggleMenu()">
 					Contattaci
 				</a>
@@ -132,6 +140,7 @@ function print_menu($location) {
 			<!-- li>
 				<a href="#">Le mie ricette preferite</a>
 			</li-->
+			</div>
 		</ul>
 	</div>';
 }

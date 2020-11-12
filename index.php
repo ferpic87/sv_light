@@ -58,7 +58,6 @@ if(count($ingredients)>0) {
 <meta name="language" content="it">
 <meta name="theme-color" content="#ff1493">
 <link rel="icon" type="image/png" href="<?php echo $imageLogo ?>" />
-
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo $timestamp; ?>">
 <link rel="stylesheet" type="text/css" href="css/materialize.min.css"  media="screen,projection"/>

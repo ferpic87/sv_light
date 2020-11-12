@@ -13,6 +13,7 @@ $hideSplashscreen = (isset($_GET['ingredients']))? "true":"false";
 require_once __DIR__ ."/head.php";
 ?>
 <body>
+
 <!-- The surrounding HTML is left untouched by FirebaseUI.
      Your app may use that space for branding, controls and other customizations.-->
 			<p id="back-top">
@@ -38,24 +39,19 @@ require_once __DIR__ ."/head.php";
 					<div class="leftoverlay"></div>
 
 					<div class="row">
-						<p class="testata"><span id="menu-icon-id"><i class="material-icons">dehaze</i></span><span id="app-name">Svuotafrigo</span></p>
+						<p class="testata"><span id="menu-icon-id"><i class="material-icons">dehaze</i></span><span id="app-name"><b>Svuota</b>frigo</span></p>
 					</div>
 					<!-- Sidebar -->
 					<?php print_menu('index'); ?>
 					<!-- End Sidebar -->
 
 					<?php if(!($bridge)) { ?>
-					<div class="row">
-						<div class="input-field col s12" id="input">
-							<input placeholder="Cerca..." id="query" type="text" class="validate" style="display:none">
-							<div id="advancedSearch" style="display:block">
-								<input placeholder="Escludi ingrediente" id="ingredientsExclude" type="text" class="validate"><br>
-								<input placeholder="Categoria" id="categories" type="text" class="validate">
-							</div>
-							<input placeholder="Inserisci un ingrediente" id="ingredients" type="text" class="validate">
+					<div class="row searchBlock">
+						<div id="searchLabel">
+							<span >Ricerca</span>
 						</div>
 						<div id="searchMode" class="col s12 center">
-							<label>
+							<label style="margin-right:30px">
 								<input class="with-gap" name="group1" id="radioIngredient" type="radio" checked="true" onclick="toggleSearchType(false)" />
 								<span>Ingredienti</span>
 							</label>
@@ -64,15 +60,26 @@ require_once __DIR__ ."/head.php";
 								<span>Nome della ricetta</span>
 							</label>
 						</div>
+			
+					
+						
+						<div class="col s12 input-field center" id="moreContainer">
+							<a href="#" class="btn" onclick="toggleAdvancedSearch(null)">
+								<b id="more">Filtri ricerca</b>
+							</a>
+						</div>
 						<span id="resetIngredients" style="display:none">
 							<a href="#" class="btn btn-floating" onclick="resetSearch()"><i class="material-icons">delete</i></a>
 						</span>
-						<div class="col s12 input-field center" id="moreContainer">
-							<a href="#" class="btn" onclick="toggleAdvancedSearch(null)">
-								<b id="more">Filtri avanzati</b>
-							</a>
-						</div>
 						<div data-role="materialtags">
+						</div>
+						<div class="input-field col s12" id="input">
+							<input placeholder="Cerca..." id="query" type="text" class="validate" style="display:none">
+							<div id="advancedSearch" style="display:block">
+								<input placeholder="Escludi ingrediente" id="ingredientsExclude" type="text" class="validate"><br>
+								<input placeholder="Categoria" id="categories" type="text" class="validate">
+							</div>
+							<input placeholder="Inserisci un ingrediente" id="ingredients" type="text" class="validate">
 						</div>
 						<!--div class="input-field col s2">
 							<a id="search_btn" class="btn btn-floating" onclick="search_recipe(true, null)"/><i class="material-icons">search</i></a>
@@ -99,9 +106,9 @@ require_once __DIR__ ."/head.php";
 					<div class="row">
 						<div class="col s12 m12 l12"><h5 style="display:none" class="result-message">Risultati per gli ingredienti <span id="label-ingredients"></span></h5></div>
 					</div>
-					<div id="inspiration" style="display:none" class="noselect">
-						<span style="display:none">Ciao sono Freddyno, il tuo assistente virtuale. Lo sapevi che con Svuotafrigo puoi fare ricerche complesse come <!--a href="<?php echo $ricerca_complessa[0]['query'] ?>&suggerimento=true" style='color:#26a69a'>< ?php echo $ricerca_complessa[0]['descrizione'] ?></a -->? Basta usare i filtri avanzati in alto. Oppure puoi farti consigliare ingredienti stagionali usando il menu a sinistra, premendo su <a href="#" onclick='inspire_me()' style='color:#26a69a'> Ispirami</a>.</span>
-					</div>
+					<!--<div id="inspiration" style="display:none" class="noselect">
+						<span style="display:none">Ciao sono Freddyno, il tuo assistente virtuale. Lo sapevi che con Svuotafrigo puoi fare ricerche complesse come <a href="<?php echo $ricerca_complessa[0]['query'] ?>&suggerimento=true" style='color:#26a69a'>< ?php echo $ricerca_complessa[0]['descrizione'] ?></a>? Basta usare i filtri avanzati in alto. Oppure puoi farti consigliare ingredienti stagionali usando il menu a sinistra, premendo su <a href="#" onclick='inspire_me()' style='color:#26a69a'> Ispirami</a>.</span>
+					</div-->
 					<div class="m-t-md" id="results">
 					</div>
 					<br>

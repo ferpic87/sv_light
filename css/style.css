@@ -1,13 +1,12 @@
-@CHARSET "ISO-8859-1";
+@charset "ISO-8859-1";
 
 h1 {
-   font-size:xx-large !important;
+  font-size: xx-large !important;
 }
 
 #label-ingredients {
-	font-style: italic;
+  font-style: italic;
 }
-
 
 #preloader {
   position: fixed;
@@ -15,72 +14,73 @@ h1 {
   top: 48%;
   z-index: 800;
 }
-.modal{
+.modal {
   z-index: 100;
 }
 .img-recipe {
-	width:100%;
-	//float:left;
-	border-radius:10px;
+  width: 100%;
+  //float:left;
+  border-radius: 10px;
 }
 
 .result {
-	min-height: 180px;
+  min-height: 180px;
 }
 
 .result .text-recipe {
-	margin-left:210px;
+  margin-left: 210px;
 }
 
 .ingredient-selected {
-	//text-decoration: underline;
-	//background-color: deeppink;
-    color: deeppink;
-  //  padding-left: 5px;
-  //  padding-right: 5px;
-    border-radius: 6px;
-	display:inline-block;
-	font-weight: bold
+  /*text-decoration: underline;
+	background-color: deeppink;*/
+  color: #37b927;
+  /* padding-left: 5px;
+   padding-right: 5px;*/
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
 }
 
 .ingredient-list {
-	text-align:justify;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
-.twitter-typeahead {
+/*.twitter-typeahead {
 	//float:left;
 	width:200px;
-}
+}*/
 
 .tt-menu {
-    background-color: white;
-    padding: 5px;
-	font-weight:bold;
-	padding-top: 2px;
-	padding-bottom: 2px;
-    border: solid 1px gray;
-    border-radius: 0px;
-	width:300px;
-	margin-top:-5px;
-	opacity:0.9;
+  background-color: white;
+  padding: 5px;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: solid 1px gray;
+  border-radius: 0px;
+  width: 300px;
+  margin-top: -5px;
+  opacity: 0.9;
 }
 
 .tt-suggestion {
-	height: 40px;
-    border-bottom: solid 1px lightGray;
-    line-height: 35px;
-	font-size: 16px;
+  height: 40px;
+  border-bottom: solid 1px lightGray;
+  line-height: 35px;
+  font-size: 16px;
 }
 
 .tt-suggestion:hover {
-	color:black;
-	background-color:#ECECEC;
+  color: black;
+  background-color: #ececec;
 }
 
 .title-recipe {
-	text-align: center;
-	font-size: x-large;
-	font-weight: bold;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .demo-card {
@@ -89,204 +89,295 @@ h1 {
 }
 
 .tt-input {
-  width:105% !important;
+  width: 105% !important;
 }
 
 .my-card-title {
-  //color: black;
- // font-weight: bold;
+  /*color: black;
+  // font-weight: bold;*/
 
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
- // width:100%;
-  //margin-bottom:0.5rem;
+  /* width:100%;*/
+  /*margin-bottom:0.5rem;*/
   /*text-align:center;*/
-/*  background-color:rgba(0, 0, 0, 0.5);*/
+  /*  background-color:rgba(0, 0, 0, 0.5);*/
+  text-align: center;
 }
 
 .my-card-subtitle {
-      font-size: 1rem;
-    line-height: 1.375rem;
-    font-weight: 500;
-    letter-spacing: .0071428571em;
-    color: #545354;
-    font-style: italic;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 0.0071428571em;
+  color: #545354;
+  font-style: italic;
+  text-align: center;
 }
 .card-block {
-	padding-top:0rem !important;
-	padding-bottom:0.5rem !important;
-	padding-left:1rem !important;
-	padding-right:1rem !important;
+  padding-top: 0rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  border: 1px solid black;
+  border-top: 0px;
 }
 
 @media screen and (max-width: 505px) {
-   .my-card-title {
-	font-size: 1.3rem;
-   }
+  .my-card-title {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 506px) {
-   .my-card-title {
-	font-size: 1.6rem;
-   }
+  .my-card-title {
+    font-size: 1.6rem;
+  }
 }
 
-.card-img-overlay  {
-	height:1px;
-	padding:0px;
+.card-img-overlay {
+  height: 1px;
+  padding: 0px;
 }
 
 .card-img-overlay h4 {
-	margin-top:0px;
-	height: 60px;
-    line-height: inherit;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  margin-top: 0px;
+  height: 60px;
+  line-height: inherit;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 .powered {
-	float: right;
-	margin-top: -45px;
-    margin-right: -10px;
+  float: right;
+  margin-top: -45px;
+  margin-right: -10px;
 }
 
 .powered img {
-	width:45px;
+  width: 45px;
 }
 
 .info {
-	color:#26a69a;
+  color: #26a69a;
 }
 
 .vai {
-	padding-left:15px !important;
-	padding-right:15px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
-.tt-suggested, .tt-suggested-tag {
-	width: 30px;
-	border-radius: 20px;
-	height: 30px;
-	float: left;
-	background-position: center;
-	background-size: cover;
-	margin-top: 5px;
+.tt-suggested,
+.tt-suggested-tag {
+  width: 30px;
+  border-radius: 20px;
+  height: 30px;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  margin-top: 5px;
 }
 
 .tt-suggested-tag {
-	margin-top: 1px !important;
-	margin-left: -5px !important;
-	margin-right: 3px;
+  margin-top: 1px !important;
+  margin-left: -5px !important;
+  margin-right: 3px;
 }
 
 #inspiration {
-	background-image: url('../img/cat2.png');
+  background-image: url("../img/cat2.png");
   width: 300px;
-	height: 500px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
-  padding:19px;
-	//margin-top:70px;
-	margin-top:20px;
-	text-align: center;
+  padding: 19px;
+  //margin-top:70px;
+  margin-top: 20px;
+  text-align: center;
   font-weight: bold;
   font-size: 15px;
-  cursor:pointer;
-	//text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  cursor: pointer;
+  //text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 #inspiration span {
-    animation: type 4s steps(60, end);
+  animation: type 4s steps(60, end);
 }
 
-@keyframes type{
-  from { width: 0; }
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Chrome/Safari/Opera */
-     -khtml-user-select: none; /* Konqueror */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   not supported by any browser */
 }
 
 .button-google-play img {
-	max-width:180px;
-	margin: 0 auto;
-    margin-top: 20px;
+  max-width: 180px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 #carica_altro {
-	text-align:center;
+  text-align: center;
 }
 
 #svuotafrigo-feat {
-    font-size: large;
-    margin-top: 15px;
-    display: block;
-    margin-bottom: -15px;
+  font-size: large;
+  margin-top: 15px;
+  display: block;
+  margin-bottom: -15px;
 }
 
 #query {
-	margin-top: 8px;
-	margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000000;
+  text-align: center;
 }
 
 .badgeDownload {
-	text-align:center;
+  text-align: center;
 }
 
-.favourite  {
-    font-size: 45px !important;
-    vertical-align: middle;
-    color: #26a69a;
-	margin-left:7px;
+.favourite {
+  font-size: 45px !important;
+  vertical-align: middle;
+  color: #26a69a;
+  margin-left: 7px;
 }
 
 #splashscreen {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-	margin: 0 auto;
-	/*display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  /*display: none;
     background-color: deeppink; /* Black background with opacity */
-	background-color: white;
-    z-index: 1000;
-    cursor: pointer;
-	vertical-align:middle;
+  background-color: white;
+  z-index: 1000;
+  cursor: pointer;
+  vertical-align: middle;
 }
 
 .img-responsive {
-	margin-top:-1px;
+  margin-top: -1px;
 }
 .card-img-top {
   border-radius: 0 !important;
 }
 
 #moreContainer {
-  display:block;
+  display: block;
 }
 
-.btn:hover, .btn:active, .btn:focus {
+/*.btn:hover, .btn:active, .btn:focus {
   color:white !important;
-}
+}*/
 
 #resetIngredients {
-  float:right;
+  float: right;
 }
 
 .feedDateMessage {
-  color:gray;
-  font-size:small;
+  color: gray;
+  font-size: small;
   padding-top: 5px;
 }
+
+/*MODIFICHE GRAFICHE MARIO*/
+#searchLabel {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+.searchBlock {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+#searchMode {
+  margin-top: 15px;
+}
+
+.btn,
+.btn-large {
+  color: #37b927 !important;
+  background-color: #ffffff !important;
+  border: 1px solid black !important;
+}
+.materialize-tags {
+  border-bottom: 2px solid #000 !important;
+  text-align: center;
+}
+input.n-tag.tt-input {
+  text-align: center;
+}
+
+input#query::placeholder {
+  color: black;
+}
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #37b927 !important;
+}
+
+[type="radio"] + span:before,
+[type="radio"] + span:after {
+  width: 20px !important;
+  height: 20px !important;
+}
+[type="radio"]:not(:checked) + span,
+[type="radio"]:checked + span {
+  padding-left: 30px !important;
+}
+.chip {
+  background-color: #37b927 !important;
+  padding: 0px 5px !important;
+  text-transform: uppercase !important;
+}
+
+.card {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.btn-floating i {
+  color: #37b927!important;
+}
+
+.buttonShare{
+  text-align: center;
+}
+.buttonShare a {
+  border-radius: 10%;
+}
+hr{
+  border-top: 1px solid black!important;
+}
+body{
+  font-family: 'Montserrat';
+}
+/*END MODIFICHE GRAFICHE MARIO*/
