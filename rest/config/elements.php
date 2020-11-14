@@ -34,18 +34,25 @@ Scrivi ciò che hai in dispensa e Svuotafrigo ti suggerirà il piatto giusto per
 	}
 	function print_social_links() {
 		echo '<div id="infoSocial" class="modal">
-						<div class="modal-content">
-						  <h4>Seguici sui social network</h4>
-						 	<table class="table">
-								<tr>
-								  <td><a class="hideshare-facebook" title="Facebook" href="https://www.facebook.com/svuotafrigo"><i class="fab fa-facebook-square fa-5x"></i></a></td>
-								  <td><a class="hideshare-twitter" title="Twitter" href="https://twitter.com/Svuotafrigo"><i class="fab fa-twitter-square fa-5x"></i></a></td>
-								</tr>
-								<tr>
-								  <td><a class="hideshare-instagram" title="Instagram" href="http://www.instagram.com/_u/svuotafrigo/"><i class="fab fa-instagram fa-5x"></i></a></td>
-								  <td><a class="hideshare-telegram" title="Telegram" href="https://telegram.me/svuotafrigo"><i class="fab fa-telegram fa-5x"></i></a></td>
-								</tr>
-							</table>
+						<div class="modal-content" style="padding:0px">
+							<div class="content_follow">
+									<div>
+										<a title="Facebook" href="https://www.facebook.com/svuotafrigo" class="fa fa-social fa-facebook"></a>
+									</div>
+								
+									<div>
+										<a title="Twitter" href="https://twitter.com/Svuotafrigo" class="fa fa-social fa-twitter"></a>
+									</div>
+							</div>
+							<div class="content_follow">
+									<div style="background: lightblue;">
+										<a title="Telegram" href="https://telegram.me/svuotafrigo" class="fa fa-social fa-telegram"></a>
+									</div>
+									<div style="background: pink;">
+										<a title="Instagram" href="http://www.instagram.com/_u/svuotafrigo/" href="#" class="fa fa-social fa-instagram"></a>
+									</div>
+							</div>
+							
 						</div>
 						<div class="modal-footer">
 						  <a title="Chiudi info" href="#" class="modal-action modal-close btn btn-primary">Chiudi</a>

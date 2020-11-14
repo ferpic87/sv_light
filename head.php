@@ -20,7 +20,7 @@
 <link rel="stylesheet" type="text/css" href="css/hideshare.css?v=<?php echo $timestamp; ?>" media="screen">
 <link rel="stylesheet" type="text/css" href="css/toast-notification-popup.css?v=<?php echo $timestamp; ?>" media="print" onload="this.media='all'">
 <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script
 	src="js/jquery.min.js"></script>
 
@@ -62,3 +62,4 @@
 <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
 <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 </head>
+<div id="overlay"></div>

@@ -1,5 +1,6 @@
 function toggleMenu() {
 	$("#wrapper").toggleClass("toggled");
+	$("#overlay").toggleClass("overlay");
 }
 
 function checkToggle() {
